@@ -73,7 +73,7 @@ public class DepartureController {
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/jbes2000/createDeparture/{"
         		+ ""
-        		+ "}").buildAndExpand(Departure.getDepartureId()).toUri());
+        		+ "}").buildAndExpand(Departure.getDepartureId()).toUri());	
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
  

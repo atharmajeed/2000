@@ -7,7 +7,7 @@
 version: 0.0
 os: linux 
 files:
-  - source: /
+  - source: target/jbes2000.jar
     destination:  /opt/tomcat7/webapps/
 
 # During the BeforeInstall deployment lifecycle event, run the commands 
@@ -15,13 +15,13 @@ files:
 
 hooks: 
   BeforeInstall: 
-    - location: /opt/tomcat7/scripts/stoptomcat.sh  
+    - location: stoptomcat.sh  
       timeout:  300
      
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   AfterInstall:
-    - location: /opt/tomcat7/scripts/starttomcat.sh     
+    - location: starttomcat.sh     
       timeout: 300
       
  
