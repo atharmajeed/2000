@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: jbes2000
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: atharmajeed
+Implementation-Vendor-Id: uk.gov.dwp.jbes2000.departure
+Build-Jdk: 1.8.0_65
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
